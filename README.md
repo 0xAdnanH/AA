@@ -1,13 +1,9 @@
-# Sample Hardhat Project
+This account consist of four main ERCs:
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+- ERC173: Where the ownership is restricted through this EIP to all executable functions
 
-Try running some of the following tasks:
+- ERC725X: Generic executor allowing to interact with other addresses and deploy contracts
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+- ERC725Y: Allowing to setData inside the storage of the contract
+
+- ERC1271: Allowing to validate signatures based on the owner of the account
